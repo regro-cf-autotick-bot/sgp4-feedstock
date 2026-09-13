@@ -8,11 +8,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/s/sgp4/sgp4-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/s/sgp4/sgp4-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
